@@ -1,28 +1,41 @@
 {
-  "name": "codeceptjs-playwright-cucumberbdd",
-  "version": "1.0.0",
-  "description": "This is a Node.js based Web UI automation framework which uses Codecept.js , Playwright cucumber BDD and Allure Reporting ",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ilamvazhuthi/CodeceptJs-Playwright-CucumberBDD.git"
-  },
-  "keywords": [
-    "Web",
-    "UI",
-    "Automation",
-    "Node.js",
-    "based",
-    "WebUI",
-    "Automation"
-  ],
-  "author": "Ilamvazhuthi Mathivanan",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ilamvazhuthi/CodeceptJs-Playwright-CucumberBDD/issues"
-  },
-  "homepage": "https://github.com/ilamvazhuthi/CodeceptJs-Playwright-CucumberBDD#readme"
+    "name": "codeceptjs-playwright-cucumberbdd",
+    "version": "1.0.0",
+    "description": "This is a Node.js based Web UI automation framework which uses Codecept.js , Playwright cucumber BDD and Allure Reporting ",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "codeceptjs": "codeceptjs run --steps",
+        "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
+        "codeceptjs:ui": "codecept-ui --app",
+        "codeceptjs:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+        "codeceptjs:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+        "codeceptjs:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ilamvazhuthi/CodeceptJs-Playwright-CucumberBDD.git"
+    },
+    "keywords": [
+        "Web",
+        "UI",
+        "Automation",
+        "Node.js",
+        "based",
+        "WebUI",
+        "Automation"
+    ],
+    "author": "Ilamvazhuthi Mathivanan",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ilamvazhuthi/CodeceptJs-Playwright-CucumberBDD/issues"
+    },
+    "homepage": "https://github.com/ilamvazhuthi/CodeceptJs-Playwright-CucumberBDD#readme",
+    "devDependencies": {
+        "@codeceptjs/configure": "^0.8.0",
+        "@codeceptjs/examples": "^1.2.1",
+        "@codeceptjs/ui": "^0.4.6",
+        "codeceptjs": "^3.3.3",
+        "playwright": "^1.22.2"
+    }
 }
